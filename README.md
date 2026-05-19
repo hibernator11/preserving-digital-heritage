@@ -19,5 +19,21 @@ WHERE {?s wdt:P8905 ?prado .
 GROUP BY ?s ?sLabel ?author ?authorLabel ?year
 ```
 
+```
+SELECT DISTINCT ?work ?workLabel 
+WHERE {
+       ?s wdt:P18 ?image.
+       ?s wdt:P170 wd:Q5593.
+       BIND(<https://data.cervantesvirtual.com/person/3448> 
+       as ?bvmcID)
+  SERVICE 
+  <http://data.cervantesvirtual.com/openrdf-sesame/repositories/data> 
+  {
+    ?work dc:subject ?bvmcID .
+    ?work rdfs:label ?workLabel .
+   }
+}
+```
+
 National Gallery property: https://www.wikidata.org/wiki/Property:P13325
 Musée d'Orsay artwork ID: https://www.wikidata.org/wiki/Property:P4659

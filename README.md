@@ -2,6 +2,33 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hibernator11/preserving-digital-heritage/HEAD)
 
+## Overview
+
+This project demonstrates how to use Wikidata and SPARQL queries to support digital heritage preservation by extracting, structuring, and analyzing cultural heritage metadata.
+
+Wikidata provides a collaborative, open knowledge graph that includes information about artworks, cultural objects, authors, institutions, and historical context. By leveraging SPARQL queries, researchers and developers can retrieve rich, interconnected datasets for digital humanities, museum informatics, and heritage documentation.
+
+This repository focuses on extracting structured information about artworks, including images, authorship, creation dates, and depicted subjects.
+
+## Use Case
+
+Digital heritage preservation requires:
+
+Structured metadata about cultural objects
+Links between artworks, creators, and concepts
+Multilingual labels and descriptions
+Open and reusable data sources
+
+Wikidata enables all of this through a semantic knowledge graph, making it ideal for:
+
+Museum catalog enrichment
+Cultural analytics
+Digital archives
+AI-assisted heritage research
+Educational platforms
+
+### SPARQL
+
 ```
 SELECT DISTINCT ?s ?sLabel ?author ?authorLabel 
   (SAMPLE(?date) AS ?year) 
@@ -39,3 +66,10 @@ WHERE {
 
 National Gallery property: https://www.wikidata.org/wiki/Property:P13325
 Musée d'Orsay artwork ID: https://www.wikidata.org/wiki/Property:P4659
+
+## Challenges & Notes
+Wikidata Query Service (WDQS) may impose rate limits (HTTP 429) during high load or outages.
+For large-scale extraction, consider:
+batching queries
+caching results
+using Wikidata dumps instead of live queries

@@ -71,6 +71,8 @@ Musée d'Orsay artwork ID: https://www.wikidata.org/wiki/Property:P4659
 
 ## Institutions
 
+The following institutions and properties were employed for the use cases described in this work.
+
 | Institution                       | Property     | No. records |
 | --------------------------------- | ------------ | ----------- |
 | Musée d'Orsay                     | *wdt:P4659*  | 1914        |

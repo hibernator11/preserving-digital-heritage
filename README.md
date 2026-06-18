@@ -10,7 +10,7 @@ Wikidata provides a collaborative, open knowledge graph that includes informatio
 
 This repository focuses on extracting structured information about artworks, including images, authorship, creation dates, and depicted subjects.
 
-This project includes a jupyter notebook describing how to replicate the extraction process. The code is available in this [link](Prado.ypnb).
+This project includes a jupyter notebook describing how to replicate the extraction process. The code is available in this [link](Prado.ipynb).
 
 ## Use Case
 

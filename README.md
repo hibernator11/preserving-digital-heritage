@@ -67,6 +67,17 @@ WHERE {
 National Gallery property: https://www.wikidata.org/wiki/Property:P13325
 Musée d'Orsay artwork ID: https://www.wikidata.org/wiki/Property:P4659
 
+## Institutions
+
+| Institution                       | Property     | No. records |
+| --------------------------------- | ------------ | ----------- |
+| Musée d'Orsay                     | *wdt:P4659*  | 1914        |
+| National Gallery                  | *wdt:P13325* | 2472        |
+| National Gallery of Ireland       | *wdt:P8906*  | 1052        |
+| Prado Museum                      | *wdt:P8905*  | 4012        |
+| Royal Museum of Fine Arts Antwerp | *wdt:4905*   | 2065        |
+
+
 ## Challenges & Notes
 Wikidata Query Service (WDQS) may impose rate limits (HTTP 429) during high load or outages.
 For large-scale extraction, consider:
